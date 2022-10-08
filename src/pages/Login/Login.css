@@ -1,0 +1,57 @@
+.loginForm {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginWrapper {
+    width: max-content;
+    height: max-content;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+}
+
+.loginWrapper>input {
+    padding: 10px 20px;
+    width: 300px;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.loginWrapper>h1 {
+    font-family: var(--poppins);
+}
+
+.loginWrapper>p {
+    font-family: var(--viga);
+    margin-top: -15px;
+}
+
+
+
+.otpBtn {
+    background-color: #77E7D6;
+    color: black;
+}
+
+.loginBtn {
+    background-color: black;
+    width: 100px;
+    color: white;
+}
+
+.wrnOtp{
+    color: red;
+    align-self: flex-end;
+}
+
+

@@ -1,0 +1,66 @@
+.adminSignUp-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adminSignUp-wrapper>img{
+    z-index: -10;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.adminSignUp {
+    width: 30%;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    z-index: 99;
+}
+
+.adminSignUp>h1{
+    font-family: var(--poppins);
+    font-size: 40px;
+    background-image: linear-gradient(180deg, blue, black);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.adminSignUp>input{
+    padding: 10px;
+    width: 80%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.adminSignUp>select{
+    padding: 10px;
+    width: 80%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.adminSignUp button{
+    width: 100px;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 600px){
+    .adminSignUp{
+        width: 90%;
+    }
+}

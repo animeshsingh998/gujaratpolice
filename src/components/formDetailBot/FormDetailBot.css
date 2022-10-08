@@ -1,0 +1,25 @@
+.FormDetail-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 90%;
+    margin-inline: auto;
+}
+
+tr {
+    min-height: 50;
+}
+
+td {
+    height: 45px;
+}
+
+@media screen and (max-width: 1000px) {
+    .FormDetail-wrapper {
+        display: none;
+    }
+}

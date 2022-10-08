@@ -1,0 +1,92 @@
+.formsTable-wrapper {
+    width: 100%;
+    min-height: 60vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    overflow-x: visible;
+}
+
+table {
+    width: 90%;
+    height: max-content;
+    border-collapse: collapse;
+}
+
+th {
+    height: 40px;
+    font-family: var(--poppins);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+td {
+    text-align: center;
+}
+
+tr {
+    border-bottom: 1px solid black;
+    border-width: 0.01px;
+}
+
+tr:nth-of-type(0) {
+    background-color: aqua;
+}
+
+.tableHead {
+    background-color: gray;
+}
+
+.tableHead:hover {
+    background-color: gray;
+}
+
+tr {
+    transition: all 0.1s ease-in-out;
+}
+
+tr:hover {
+    background-color: #74ebd550;
+}
+
+.frmDelBtn {
+    background-color: transparent;
+}
+
+.viewFrmDetail {
+    display: block;
+    color: #E94560;
+}
+
+.viewFrmDetail:hover {
+    text-decoration: underline;
+}
+
+.grnQrBtn {
+    height: 30px;
+    background-color: black;
+    color: white;
+}
+
+.heyo{
+    margin: 5px 0;
+    background-color: black;
+}
+
+.repBtn{
+    background-color: skyblue;
+    height: 45px;
+    width: 70px;
+    color: black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AdminLogin>h1{
+    background-image: linear-gradient(90deg, red, blue);
+    background-clip: text;
+    color: transparent;
+}

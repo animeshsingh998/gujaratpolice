@@ -1,0 +1,56 @@
+.AdminLogin-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #74EBD5;
+    background-image: linear-gradient(180deg, #74EBD5 0%, #9FACE6 100%);
+}
+
+.AdminLogin {
+    border-radius: 15px;
+    width: 30%;
+    height: 60%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 40px;
+}
+
+.AdminLogin>h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: var(--poppins);
+    margin-top: -10px;
+}
+
+.adminLoginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.adminLoginForm>input {
+    width: 80%;
+    padding: 10px 15px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+.aLogBtn {
+    width: 100px;
+    margin-bottom: -20px;
+    background-color: var(--blue-neon);
+}
+
+@media screen and (max-width: 600px) {
+    .AdminLogin {
+        width: 90%;
+    }
+}

@@ -1,0 +1,11 @@
+<input
+                          type="radio"
+                          name={ques.elementId}
+                          id={ques.elementId + `${index}`}
+                          value={option}
+                          key={ques.elementId + `${index}l90`}
+                          className="optn"
+                        //   checked={index === 0 ? "checked" : ""}
+                          checked={index === 0 ? "checked" : "unchecked"}
+                          onChange={handleRadioChange}
+                        />

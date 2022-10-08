@@ -1,0 +1,11 @@
+.Dashboard {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

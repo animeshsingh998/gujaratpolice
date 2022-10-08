@@ -1,0 +1,20 @@
+.Report-wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+.repChrt {
+    display: flex;
+}
+
+.asdaw{
+    flex: 1;
+}
+
+.infoOne{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}

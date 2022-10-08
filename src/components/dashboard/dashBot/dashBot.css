@@ -1,0 +1,15 @@
+.dashBot {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    min-height: 39vh;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+    .dashBot {
+        grid-template-columns: 1fr;
+    }
+}

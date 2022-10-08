@@ -1,0 +1,13 @@
+.Fdashboard {
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .Fdashboard {
+        display: none;
+    }
+}

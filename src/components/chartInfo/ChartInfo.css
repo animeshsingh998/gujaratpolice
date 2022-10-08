@@ -1,0 +1,43 @@
+.Chartinfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    height: 100%;
+    padding: 10px;
+}
+
+.chart-details {
+    margin-left: 50px;
+    font-family: var(--poppins);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.chart-details>span{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.chartPic {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin-inline: auto;
+}
+
+.chartPic>img {
+    width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    .chart-details {
+        margin-left: 0px;
+    }
+    .chart-details>span{
+        font-size: 15px;
+    }
+}

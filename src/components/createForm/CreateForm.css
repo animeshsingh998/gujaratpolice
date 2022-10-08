@@ -1,0 +1,40 @@
+.Createform-wrapper{
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    padding: 40px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Createform-wrapper>h1{
+    color: var(--blue-neon);
+    font-family: var(--poppins);
+    font-size: 40px;
+}
+
+.createForm{
+    display: flex;
+    width: 100%;
+    gap: 40px;
+}
+
+.createForm>input{
+    width: 500px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.crtFm-btn{
+    background-color: var(--blue-neon);
+    width: 70px;
+}
+
+.crtFmMsg{
+    color: red;
+    font-family: var(--viga);
+    letter-spacing: 3px;
+}

@@ -1,0 +1,14 @@
+.dashMid{
+    min-height: 80vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+@media screen and (max-width: 600px){
+    .dashMid{
+        grid-template-columns: 1fr;
+    }
+}

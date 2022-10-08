@@ -1,0 +1,147 @@
+.Sidebar {
+    width: 240px;
+    height: 100vh;
+    background-color: #74EBD5;
+    background-image: linear-gradient(180deg, #74EBD5 0%, #9FACE6 100%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.policeLogo {
+    width: 100px;
+    margin-left: 35px;
+}
+
+.Sidebar.sideDisabled .policeLogo {
+    width: 50px;
+    margin-left: -10px;
+}
+
+.Sidebar.sideDisabled .ham {
+    margin-right: 10px;
+    transform: translateY(80px);
+}
+
+.Sidebar.sideDisabled .pollogo>h3 {
+    display: none;
+}
+
+.Sidebar.sideDisabled .navLinks {
+    margin-top: 100px;
+}
+
+.Sidebar.sideDisabled .logout-btn {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ham {
+    background-color: black;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 5%;
+    top: 4%;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.pollogo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pollogo>h3 {
+    margin-left: 8px;
+    font-family: var(--poppins);
+    font-size: 25px;
+
+}
+
+.ham:hover {
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.ham:hover .haml {
+    color: black;
+}
+
+.ham>svg {
+    color: white;
+}
+
+.sideDisabled {
+    /* transform: translateX(-180px); */
+    width: 70px;
+    /* display: none; */
+}
+
+li, a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+.navLink {
+    display: flex;
+    width: 100%;
+    margin-left: 5px;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    font-family: var(--viga);
+    font-size: 20px;
+    overflow-x: hidden;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.logout-btn {
+    background-color: black;
+    color: white;
+    width: 50%;
+    position: absolute;
+    bottom: 1%;
+    left: 25%;
+    padding-left: 5px;
+}
+
+.logout-btn>svg {
+    width: 20px;
+    height: 20px;
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 600px) {
+    .logout-btn {
+        bottom: 10%;    
+    }
+    .Sidebar{
+        height: unset;
+    }
+}

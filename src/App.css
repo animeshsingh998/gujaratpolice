@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --poppins: 'Poppins', Courier, monospace;
+    --viga: 'Viga', Courier, monospace;
+    --blue: #8758FF;
+    --blue-neon: #77E7D6;
+}
+
+.App {
+    background-color: #74EBD5;
+    background-image: linear-gradient(180deg, #74EBD5 0%, #9FACE6 100%);
+    display: flex;
+}
+
+.noAcc {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    font-family: var(--poppins);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input:disabled {
+    background-color: rgba(0, 0, 0, 0.100);
+    cursor: not-allowed;
+    color: black;
+}
+
+button:disabled {
+    background-color: gray;
+    color: black;
+    cursor: not-allowed;
+}
+
+button:disabled:hover {
+    transform: scale(1);
+}
+
+button {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s ease-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.btnLoader {
+    width: 15px;
+}
+
+.vl {
+    border-right: 1px solid black;
+    height: 90%;
+
+}
+
+
+
+.voP {
+    display: none;
+    height: 100vh;
+    background-color: white;
+    font-family: var(--poppins);
+}
+
+table {
+    width: 90%;
+    height: max-content;
+    border-collapse: collapse;
+}
+
+th {
+    height: 40px;
+    font-family: var(--poppins);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+td {
+    text-align: center;
+}
+
+tr {
+    border-bottom: 1px solid black;
+    border-width: 0.01px;
+}
+
+tr:nth-of-type(0) {
+    background-color: aqua;
+}
+
+.tableHead {
+    background-color: gray;
+}
+
+.tableHead:hover {
+    background-color: gray;
+}
+
+tr {
+    transition: all 0.1s ease-in-out;
+}
+
+tr:hover {
+    background-color: #74ebd550;
+}
+
+@media screen and (max-width: 800px) {
+    .voP {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 30px;
+    }
+
+    .Fdashboard {
+        display: none;
+    }
+}
